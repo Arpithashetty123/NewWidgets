@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Examples/pie_menu.dart';
 
+import 'Examples/Animations/Parent_animation.dart';
+import 'Examples/Animations/Transformations.dart';
+import 'Examples/Animations/basics.dart';
+import 'Examples/Animations/delayed.dart';
+import 'Examples/Animations/valuesChange.dart';
 import 'Examples/speed_dail.dart';
 import 'Examples/spin_kit.dart';
 void main() {
@@ -24,7 +29,8 @@ debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.blue,
           ),
-      home: SpeedDailPage());
+      home: const ValueChangePage());
   }
 }
 
+// 
