@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Examples/EducationApp/views/main_page.dart';
-import '../utils/splashContiner.dart';
+import '../utils/splash_continer.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 class SplashPage extends StatelessWidget {
-  SplashPage({Key? key});
-
+  const SplashPage({super.key,});
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;

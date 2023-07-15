@@ -7,7 +7,7 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-            padding: EdgeInsets.only(left: 15, right: 15, bottom: 10, top: 15),
+            padding: const EdgeInsets.only(left: 15, right: 15, bottom: 10, top: 15),
             decoration: const BoxDecoration(
                 color: Colors.deepPurpleAccent,
                 borderRadius: BorderRadius.only(
@@ -23,7 +23,7 @@ class AppBarWidget extends StatelessWidget {
                     Icon(Icons.notifications, color: Colors.white)
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Text(
@@ -33,7 +33,7 @@ class AppBarWidget extends StatelessWidget {
                       fontSize: 25,
                       fontWeight: FontWeight.w600),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextField(
@@ -48,7 +48,7 @@ class AppBarWidget extends StatelessWidget {
                   ),
                   onChanged: (value) {},
                 ),
-                  SizedBox(
+                  const SizedBox(
                   height: 20,
                 ),
               ],
