@@ -9,16 +9,20 @@ class _TransformationPageState extends State<TransformationPage>
   late Animation animation;
   late Animation transformationAni;
   late AnimationController animationController;
+
   @override
   void initState() {
     super.initState();
+
+    ///change the shape
     animationController =
         AnimationController(vsync: this, duration: const Duration(seconds: 3));
     animation = Tween(begin: 5.0, end: 200.0).animate(
       CurvedAnimation(parent: animationController, curve: Curves.easeInOutQuart),
     );
+    //change the border
     transformationAni=BorderRadiusTween(
-      begin: BorderRadius.circular(200.0),
+      begin: BorderRadius.circular(100.0),
       end: BorderRadius.circular(0.0)
     ).animate(
     CurvedAnimation(parent: animationController, curve: Curves.ease));

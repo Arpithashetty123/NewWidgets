@@ -26,6 +26,7 @@ late AnimationController animationController;
     animation: animationController,
        builder: (context, child) {
          return Scaffold(
+          //tranform is used if we want to move anything along x axies or y axies
           body: Transform(
             //animation.value it will range from 0.0 to 1.0
            transform: Matrix4.translationValues(animation.value*width, 0, 0),

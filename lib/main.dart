@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Examples/pie_menu.dart';
+import 'package:flutter_application_1/Examples/Animations/flip_animation.dart';
 
-import 'Examples/Animations/Parent_animation.dart';
-import 'Examples/Animations/Transformations.dart';
-import 'Examples/Animations/basics.dart';
-import 'Examples/Animations/delayed.dart';
-import 'Examples/Animations/valuesChange.dart';
-import 'Examples/speed_dail.dart';
-import 'Examples/spin_kit.dart';
+import 'Examples/EducationApp/views/splash_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -27,10 +21,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
 debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch:Colors.deepPurple,
           ),
-      home: const ValueChangePage());
+      home:  SplashPage());
   }
 }
 
-// 

@@ -28,7 +28,6 @@ class _ParentDelayedAnimationPageState extends State<ParentDelayedAnimationPage>
     animationController.dispose();
     super.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -46,7 +45,7 @@ class _ParentDelayedAnimationPageState extends State<ParentDelayedAnimationPage>
                     builder: (context, child) {
                       return Container(
                         height: childAnimation.value * 2,
-                        width: childAnimation.value * 2,
+                        width: childAnimation.value*2,
                         decoration: const BoxDecoration(color: Colors.black),
                       );
                     },
